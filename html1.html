@@ -6,11 +6,13 @@
 </head>
 ヘッドに入れるのは文字セットとか検索した時のページタイトルとかそういう見せる必要のないものですよね。
  <body>んでbodyのなかに入れるということですね。
+    <header>
     <h1>目次</h1>
     <p>id属性</p>
     <ul>
         <li><a href ="#mokuji1">htmlのメタデータ</a></li>
         <li><a href ="#mokuji2">ハイパーリンク</a></li>
+    </header>
     </ul>
 <p>ちなみにhtmlのプレビューの起動はctrl+K>V</p>
 <h1 id ="mokuji1">HTMLの初歩ポイ内容について</h1>
@@ -82,5 +84,45 @@
                 <dt>絶対URLと相対URLについて</dt>
                     <dd>絶対URLってのはプロトコルとホスト名を含んだ原点からみた場所的な。相対URLはいま自分がいるばしょからどのようにディレクトリを移動すればいけるかどうか示すもの</dd>
             </dl>
-</body>
+            <dl>
+                <dt>
+                    多分HTML　ｍDNの文書とウェブサイトの構造で説明されている内容は、CSSとかjava scriptとか使ってまとめてしかもウェブサイトの大枠毎に修飾しやすくするためのものだよ　ラッパーていうらしいけど
+                </dt>
+            </dl>
+            <p>マルチメディアの読み込み関係の奴はchromeの開発者用ツールでみたほうが早い</p>
+           
+            <figure>
+                <img src="images/yaruki_moeru_man.png"
+                 alt="yaruki_moeru_man" 
+                 width="400" 
+                 height ="400" 
+                 title="yaruki_moeru_man" />
+                 <figcaption>yaruki_moeru_man
+                </figcaption>
+            </figure>
+            <p>動画等のマルチメディアについてもいろいろあったけど、使うときにその都度属性とかの所の扱いをみればええやんって思ったんでそうします。ながしみしつつやるのならやる漢字で</p>
+            <p>iflameはyoutube動画等やgoogleMap等の情報を埋め込むためのものらしい</p>
+            <p>svg形式はベクター画像のことで、ピクセルで作られるやつと違ってベクトル情報でつくられるから拡大縮小してもおっけらしい。まぁいろいろ問題はあるっぽいけど
+            </p>
+            <p>スマホとかPCとかどっちもで表示されるウェブページでの画像で工夫したいのならレスポンシブ画像ていうのも考えたほうがいいらしい。</p>
+            <table>
+                <colgroup>
+                  <col />
+                  <col style="background-color: yellow" />
+                </colgroup>
+                <tr>
+                  <th>Data 1</th>
+                  <th>Data 2</th>
+                </tr>
+                <tr>
+                  <td>Calcutta</td>
+                  <td>Orange</td>
+                </tr>
+                <tr>
+                  <td>Robots</td>
+                  <td>Jazz</td>
+                </tr>
+              </table>
+              <p>htmlで表はつくれるよ。trとかthとかtdをつかえばいける</p>
+        </body>
 </html>
