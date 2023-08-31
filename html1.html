@@ -1,0 +1,86 @@
+<!doctype html>文書型定義
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>My test page</title>
+</head>
+ヘッドに入れるのは文字セットとか検索した時のページタイトルとかそういう見せる必要のないものですよね。
+ <body>んでbodyのなかに入れるということですね。
+    <h1>目次</h1>
+    <p>id属性</p>
+    <ul>
+        <li><a href ="#mokuji1">htmlのメタデータ</a></li>
+        <li><a href ="#mokuji2">ハイパーリンク</a></li>
+    </ul>
+<p>ちなみにhtmlのプレビューの起動はctrl+K>V</p>
+<h1 id ="mokuji1">HTMLの初歩ポイ内容について</h1>
+<p>HTMLについての内容をここにHTMLでまとめて区　ここで<strong>タグでくくれば</strong>こんな感じで強調された文書が打てるのよ</p>
+<P>＜img src="" alt="">みたいに要素がない単一タグのみのやつをから要素とよんでるよ</P>
+<p class="editor-note">開始タグに属性を含めることができるよ　属性ってのは要素の隠れパラメータ的な感じ　classはスタイル情報の対象の属性?なんかよくわからん
+</p>
+<a href="https://developer.mozilla.org/ja/docs/Learn/HTML/Introduction_to_HTML/Getting_started" title="aaaaaa" target="_blank">＜a＞のタグでくくるのはanchorでこんな感じでハイパーリンクを作成できる　属性としてhrefをつけるとリンク先のウェブアドレスが指定できる</a>
+<P>属性値がないやつあるけど属性</P>
+    <h1>htmlのメタデータ </h1>　できれば１ページにいこのh1らしいね２個おいちゃったよ
+        <h2>何がはいるのか(ページ内では表示されない）</h2>
+            <ul>
+                <li>cssへのリンク（CSSによりHTMLを修飾する場合）</li> 
+                    <ul>
+                        <li>＜link＞の空要素でrel="stylesheet"noの属性でスタイルシートであることを示して、hrefの属性でパスを示す<strong>
+                        もちろんCSSへのね
+                        </strong></li>
+                        <li>＜script＞の空要素にsrcで<strong>js</strong>のパスを示して、属性値のない属性、論理属性的なやつやっけ？のdeferをつける　これはなんかjsをちゃんとＨＴＭＬがすべて解析し終わった後に処理させるのに有用らしい<a href="
+                            https://developer.mozilla.org/ja/docs/Learn/JavaScript/First_steps/What_is_JavaScript#%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%97%E3%83%88%E3%81%AE%E8%AA%AD%E3%81%BF%E8%BE%BC%E3%81%BF%E6%96%B9%E9%87%9D">詳しくはここ</a>
+                        </script></li>
+                    </ul>
+                <li>metadata</li>
+                    <ul>
+                        <li>メタデータは大体name=分類、content=分類に関連する内容をいれてるっぽいね。</li>
+                        <li>ちゃんと＜meta>のから要素としてname ="description" "~~~setumei">>このdescriptionで検索エンジンが探してるから適切のこれを設定することをSEO search engine optimizationっていうぽおい</li>
+                        <li>まぁ多くのメタデータは使っていくうちに覚えていくスタイルなのかな</li>
+                    </ul>
+                <li>title titleはH1と混同されがちやけどHTML文書全体のタイトルを表すメタデータっていうのとただのマークアップっていう点でちゃう
+                </li>
+                <li>x属性はほんまいろいろあって時間関係を認識しやすくするdatatime?とかいろいろある。
+                </li>
+            </ul>
+        <h2>なんかこうやってマークアップ？知らんけど団構造にしてる理由</h2>
+            <ul>
+                <li>みんなサイト見るとき見出しだけ見てるやん？じゃあ必要やん？</li>
+                <li>見出しがないとSEOの面でよくないよ</li>あ、ごめんなさい、
+
+                <li>CSSとかjsで使いやすくするためにh1とかつかってる。ただでかけりゃええってことちゃう</li>
+            </ul>
+        <h2 id="mokuji2">ハイパーリンク</h2>
+            <Ol>
+                <li>このハイパーリンクでWEBがつながる</li>
+                <li>WEBアドレスであるURLに飛ぶ</li>
+            </Ol>
+            <ul>
+                <li>もうゴリゴリに使ってる通り＜a href=""＞の要素でくくられたやつがすべてリンクになる例えば＜＜img src="" alt=""＞をaでくくれば、こいつが指し示す画像がリンクになる</li>
+                <li>一緒にtitle属性もつけたらリンクの説明文ができる</li>
+            </ul>
+            <dl>
+                <dt>なんかちょっと一気に勉強しすぎて疲れちゃった</dt>
+                    <dd>まぁインプットしすぎてる可能性はある適度にアウトぷっとが重要なのでは。</dd>
+                    <dd>ulの箇条書きじゃないバージョンかな</dd>
+                    <dd>ダウンロードもリンクらしいで</dd>
+            </dl>
+            <h3>現在HTMLのハイパーリンクの途中ですね8/17<a href="https://developer.mozilla.org/ja/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks">ハイパーリンクの説明</a></h3>
+            <dl>リンクについてURLとパスの観点から述べてみた
+                <dt>abbr <abbr title="Uniform Resorce Locator">URL</abbr>ってのは何がWEB状のどこにあるかを示すものやったよな</dt>
+                    <dd>具体的にはhttps://wwww.mozilla.org/ja/みたいな形でしめされることがおおくて、この時にファイルを見つける民に../../projetct/index.htmlみたいにファイルパスを使うんよん
+                        <a href="https://www.marketechlabo.com/url-structure-for-marketer/" title ="URLについての詳細"　target ="_blank">URLについての詳細はここ</a>
+                        <dd><strong>https://</strong>の部分がプロトコルて言われてる部分で、通信方式を表してる。だいぶてきとう見たいだけどhttpsが暗号化されてるほうかな</dd>
+                        <dd>www.marketechlabo.comの部分がホスト名でサーバーのアドレスを示す。ここでは、www.の部分が後ろを修飾するサブドメインでこれを続けてけばサブドメインのサブドメインを作ったりもできる</dd>　
+                        <dd>一般敵にwwwはWEBのサブアドレスで省略しても同じべーじを表時される絶対じゃないけどね。サーバーに依存するよ</dd>
+                        <dd>んで親ドメインの後ろに続くんがやっと出てきたファイルのバスでやんす</dd>
+            </dl>
+            <dt>基本的な動作は上下移動と並列移動やね</dt>
+            <dd>行きたい場所を記入する上に行きたいなら..</dd>
+        　　<dl>
+            <dl>
+                <dt>絶対URLと相対URLについて</dt>
+                    <dd>絶対URLってのはプロトコルとホスト名を含んだ原点からみた場所的な。相対URLはいま自分がいるばしょからどのようにディレクトリを移動すればいけるかどうか示すもの</dd>
+            </dl>
+</body>
+</html>
